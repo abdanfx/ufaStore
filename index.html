@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Usaha Fantastis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="logo">UFA Store</div>
+        
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- HERO SECTION (Full Width & Height) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="storeName"></h1>
+            <p id="storeDescription"></p>
+            <button class="whatsapp-btn" id="whatsappBtn">
+                <span>💬</span> Order via WhatsApp
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="images/undraw_breakfast_rgx5.svg" alt="Shopping">
+        </div>
+    </section>
+
+    <!-- MAIN CONTAINER (Products & Footer) -->
+    <div class="container">
+        <!-- PRODUCTS SECTION -->
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div id="productList" class="product-grid">
+                <!-- Products will be rendered here by main.js -->
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="contact">
+            <p>&copy; 2026 Toko Usaha Fantastis.</p>
+            <p>All rights reserved.</p>
+            <p style="color: antiquewhite;" id="storeWhatsapp"></p>
+        </footer>
+    </div>
+</body>
+</html>
