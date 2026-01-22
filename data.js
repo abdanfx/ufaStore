@@ -3,7 +3,7 @@
 // Data for UMKM Basic Necessities Store
 const store = {
     name: "Selamat Datang di Toko Usaha Fantastis",
-    description: "Belanja Kebutuhan Pokok Murah & Berkualitas - Gratis Ongkir untuk Pembelian Tertentu!",
+    description: "Belanja Kebutuhan Pokok Murah & Berkualitas",
     whatsapp: "+6281315452107"
 }
 

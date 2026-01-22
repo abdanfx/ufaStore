@@ -138,7 +138,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    padding: 60px 200px;
+    padding: 60px clamp(20px, 8vw, 200px);
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     margin-bottom: 0;
@@ -196,19 +196,26 @@ footer {
         margin-right: -50vw;
     }
 
+
     .hero-content {
-        max-width: 100%;
+        max-width: none;
+        width: 100%;
         order: 2;
         margin-top: 0;
         padding: 0;
+        text-align: center;
     }
 
     .hero-content h1 {
+        max-width: 100%;
         font-size: 2.2em;
-        margin-bottom: 10px;  /* Reduce spacing */
+        margin: 0 auto 10px;
+        line-height: 1.6;
     }
 
     .hero-content p {
+        font-style: oblique;
+        font-weight: bold;
         font-size: 1.1em;
         margin-bottom: 15px;  /* Reduce spacing */
     }
@@ -225,12 +232,13 @@ footer {
         width: 100%;
         display: block;
     }
+
 }
 
 /* Tablet Breakpoint */
 @media (max-width: 1024px) {
     .hero {
-        padding: 60px 100px;
+        padding: 60px clamp(60px, 100vw, 64px);
     }
 }
 
